@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+div#wrap {
+    position: relative;
+    width: 650px;
+    height: 1000px;
+    border: 1px solid #000;
+
+}
+
+div#wrap table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 450px;
+    padding: 0;
+}
+
+div#wrap table tr td {
+    border: 1px solid #000;
+    height: 25px;
+    padding: 0;
+
+}
+
+div#wrap .inputBox {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+div#wrap #male{
+    margin-left: 20px;
+}
+div#wrap #female{
+    margin-left: 30px;
+}
+
+div#wrap #year{
+    position: absolute;
+    top: 258px;
+    left: 20px;
+    width: 80px;
+    height: 35px;
+}
+div#wrap #month{
+    position: absolute;
+    top: 258px;
+    left: 110px;
+    width: 80px;
+    height: 35px;
+}
+div#wrap #day{
+    position: absolute;
+    top: 258px;
+    left: 200px;
+    width: 80px;
+    height: 35px;
+}
+
+div#wrap #btn1 {
+    position: absolute;
+    top: 360px;
+    right: 10px;
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    background-color: ;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+div#wrap #btn2 {
+    position: absolute;
+    top: 410px;
+    right: 10px;
+    display: inline-block;
+        width: 80px;
+    height: 25px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+p#title{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+textarea#txtArea{
+    width: 500px;
+}
