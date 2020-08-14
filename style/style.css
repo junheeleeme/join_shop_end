@@ -18,6 +18,14 @@ div#wrap {
     border: 1px solid #000;
 
 }
+div#wrap>div{
+    width: 100%;
+    height: 45px;
+
+}
+div#wrap>div:not(:last-child){
+    border-bottom: 1px solid black;
+}
 
 div#wrap table {
     border-collapse: collapse;
@@ -41,39 +49,41 @@ div#wrap .inputBox {
     padding-left: 20px;
 }
 
+div#wrap .inputBox::placeholder{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
 div#wrap #male{
-    margin-left: 20px;
+    margin: 16px 0 0 15px;
 }
 div#wrap #female{
-    margin-left: 30px;
+    margin: 16px 0 0 25px;
 }
 
 div#wrap #year{
-    position: absolute;
-    top: 258px;
-    left: 20px;
+    margin: 4px 0 0 15px;
     width: 80px;
     height: 35px;
 }
 div#wrap #month{
-    position: absolute;
-    top: 258px;
-    left: 110px;
+    margin: 4px;
     width: 80px;
     height: 35px;
 }
 div#wrap #day{
-    position: absolute;
-    top: 258px;
-    left: 200px;
+    margin: 4px;
     width: 80px;
     height: 35px;
 }
 
+div#wrap div:nth-child(8)>input, div#wrap div:nth-child(9)>input{
+    width: 540px;
+}
+
 div#wrap #btn1 {
-    position: absolute;
-    top: 360px;
-    right: 10px;
+    margin: 5px;
     display: inline-block;
     width: 80px;
     height: 25px;
@@ -83,21 +93,77 @@ div#wrap #btn1 {
 }
 
 div#wrap #btn2 {
-    position: absolute;
-    top: 410px;
-    right: 10px;
+    margin: 5px;
     display: inline-block;
-        width: 80px;
+    width: 80px;
     height: 25px;
+    background-color: ;
     border: 1px solid #ccc;
     outline: 0;
 }
 
 p#title{
-    margin: 10px;
-    font-size: 16px;
+    margin: 15px 10px;
+    font-size: 15px;
     font-weight: bold;
 }
 textarea#txtArea{
+    width: 648px;
+    height: 185px;
+     resize: none;
+    font-size: 15px;
+}
+
+input#ageLimit{
+    margin: 15px 5px;
+
+}
+
+span#red{
+    font-weight: bold;
+        color:#ad0b08;
+}
+#alert1{
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 12px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+div#box1{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    width: 620px;
+    height: 120px;
+}
+div#box2{
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+}
+
+input#allAgree{
+    margin: 15px 10px 0 25px;
+}
+
+div#box2 span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div#chkbox {
+    border: 1px solid #000;
     width: 500px;
+    height: 70px;
+}
+
+div#chkbox span{
+    font-size: 13px;
+    color: #3e3e3e;
+    font-weight: bold;
+}
+
+
+div#chkbox input{
+    margin: 10px;
 }
