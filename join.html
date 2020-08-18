@@ -7,53 +7,53 @@
 </head>
 <body>
 
-    <h2>회원가입</h1>
+    <h2>회원가입</h2>
     <div id="wrap">
 
-             <div>
+            <form action="https://www.google.com/" method="get" id="frm">
+
+             <div class="firstBox">
                     <input type="text"id="uName" placeholder="이름" class="inputBox">
                </div>
-             <div>
+             <div class="firstBox">
                     <input type="text"id="uId" placeholder="아이디" class="inputBox">
                 </div>
-            <div>
-                    <input type="text"id="uPw" placeholder="비밀번호" class="inputBox">
+            <div class="firstBox">
+                    <input type="password" id="uPw" placeholder="비밀번호" class="inputBox">
                 </div>
-                 <div>
-                    <input type="text"id="uPwChk" placeholder="비밀번호 확인" class="inputBox">
+                 <div class="firstBox">
+                    <input type="password" id="uPwChk" placeholder="비밀번호 확인" class="inputBox">
                 </div>
-           <div>
+           <div class="firstBox">
                     <input type="text"id="eMail" placeholder="이메일" class="inputBox">
                 </div>
-            <div>
-                    <select id="year">
+            <div class="firstBox">
+                    <select id="year" onblur="monCal()" onclick="clearDay()">
                         <option value="0">년</option>
                     </select>
-                     <select id="month">
+                     <select id="month" onblur="lastDayCal()">
                         <option value="0">월</option>
                     </select>
-                    <select id="day">
-                        <option value="0" >일</option>
+                    <select id="day" >
+                        <option value="0">일</option>
                     </select>
 
                </div>
-            <div>
+            <div class="firstBox">
                     <input type="radio" id="male" name="gender" value="male"><label for="male"> 남</label>
                     <input type="radio" id="female" name="gender" value="female"><label for="male"> 여</label>
               </div>
-            <div>
+            <div class="firstBox">
                     <input type="text"id="phoneNum" placeholder="핸드폰번호" class="inputBox">
                     <input type="button" value="인증" id="btn1">
               </div>
-            <div>
+            <div class="firstBox">
                     <input type="text"id="chkNum" placeholder="SNS 인증번호" class="inputBox">
                     <input type="button" value="확인" id="btn2">
-                </td>
-            </tr>
-        </table>
+
 
         <p id="title">이용약관</p>
-        <textarea  id="txtArea" cols="89" rows="15" readonly maxlength="500">  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+        <iframe id="readme" src="source/readme.txt" frameborder="100"></iframe>
 
        <label for="ageLimit"><input type="checkbox" id="ageLimit"><span id="red">14세 이상입니다. (필수)</span></label> <br>
        <span id="alert1">*회원가입에 필요한 최소한의 정보만 입력 받음으로써 고객님의 개인정보 수집을 최소화하고<br>편리한 회원가입을 제공합니다.</span>
@@ -61,21 +61,28 @@
        <div id="box1">
 
            <div id="box2">
-               <label for="allAgree"><input type="checkbox" id="allAgree"><span>전체동의</span></label>
+               <label for="allAgree"><input type="checkbox" id="allChk" onclick="all_check()"><span>전체동의</span></label>
            </div>
            <div id="chkbox">
            <div id="chkbox1">
-               <label for="chk1"><input type="checkbox" id="chk1"><span>이용약관</span></label>
-               <label for="chk2"><input type="checkbox" id="chk2"><span>전체개인정보 수집 및 이용안내</span></label>
-           </div>
-           <div id="chkbox2">
-               <label for="chk3"><input type="checkbox" id="chk3"><span>개인정보 제 3자 제공</span></label>
-               <label for="chk4"><input type="checkbox" id="chk4"><span>개인정보 처리위탁</span></label>
+               <label for="chk1"><input type="checkbox"  id="chk1"><span>이용약관</span></label>
+               <button type="button">내용보기</button>
+               <br>
+               <label for="chk2"><input type="checkbox" id="chk2"><span>개인정보 제 3자 제공 </span></label><button type="button">내용보기</button>
+               </div>
+        <div id="chkbox2">
+
+               <label for="chk3"><input type="checkbox"  id="chk3"><span>개인정보 수집 및 이용안내 </span></label>
+               <button type="button">내용보기</button><br>
+               <label for="chk4"><input type="checkbox"  id="chk4"><span>개인정보 처리위탁 </span></label><button type="button">내용보기</button>
            </div>
            </div>
 
        </div>
 
+       <button type="button" id="agree" onclick="submitExe()">동의하고 가입완료</button>
+
+        </form>
 
     </div>
 
